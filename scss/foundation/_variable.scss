@@ -1,0 +1,23 @@
+// Breakpoint
+$mq-breakpoints: (
+  s: 600px, //429px
+  xs: 999px, //429px
+	sm: 40em,      //640px
+	md: 48em,      //768px
+	lg: 76.25em,   //1220px
+	xl: 80em,      //1280px
+) !default;
+
+// rootの文字サイズ（px）
+$default-font-size: 16;
+
+// フォントファミリー
+$ff-ja: Barlow, Noto Sans JP, 'Noto Sans JP', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', "メイリオ", Meiryo, sans-serif;
+
+// カラー
+$primary-color: #06B6D4;
+$text-color: #000;
+
+// デザインファイルの基本横幅
+$artboard-width: 1440px;
+$content-width: 1000px;

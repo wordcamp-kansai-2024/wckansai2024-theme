@@ -1,0 +1,32 @@
+{
+  "name": "wckansai2024-theme",
+  "version": "1.0.0",
+  "description": "Theme for WordCamp Kansai 2024",
+  "devDependencies": {
+    "autoprefixer": "^10.4.14",
+    "npm-run-all": "^4.1.5",
+    "postcss": "^8.4.27",
+    "postcss-cli": "^10.1.0",
+    "postcss-import": "^15.1.0",
+    "sass": "^1.65.1"
+  },
+  "browserslist": [
+    "defaults"
+  ],
+  "scripts": {
+    "css": "sass ./scss/:./assets/css/ --no-source-map --style expanded",
+    "autoprefixer": "postcss --use autoprefixer --no-map ./assets/css/*.css -d ./assets/css/",
+    "build": "npm-run-all --parallel css --sequential autoprefixer",
+    "watch": "sass ./scss/:./assets/css/ --no-source-map --watch --style expanded"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wckansai2024/wckansai2024-theme.git"
+  },
+  "author": "",
+  "license": "GPL-2.0",
+  "bugs": {
+    "url": "https://github.com/wckansai2024/wckansai2024-theme/issues"
+  },
+  "homepage": "https://github.com/wckansai2024/wckansai2024-theme#readme"
+}

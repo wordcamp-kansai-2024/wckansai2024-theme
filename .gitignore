@@ -1,0 +1,14 @@
+*.log
+*~
+*.bak
+*.org
+.htaccess
+Thumbs.db
+desktop.ini
+.DS_Store
+cache
+.wp-env.json
+package-lock.json
+
+## npm
+node_modules/

@@ -1,0 +1,26 @@
+@use "../foundation/import" as i;
+@use "../foundation/variable" as v;
+@use "../functions/return_vw" as *;
+@use "sass:math";
+
+.wp-block-heading {
+  &.wck-heading-style-1 {
+    position: relative;
+    text-transform: uppercase;
+    color: #000;
+    font-size: math.div(36, v.$default-font-size) * 1rem;
+    line-height: math.div(36, 36);
+    font-weight: 500;
+    &::after {
+      content: '';
+      width: 261px;
+      height: 18px;
+      background: image-set(url(../images/heading-bgi.png) 1x, url(../images/heading-bgi@2x.png) 2x) top center/100% auto no-repeat;
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+      display: block;
+    }
+  }
+}

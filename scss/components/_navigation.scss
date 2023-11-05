@@ -1,0 +1,53 @@
+@use "../foundation/import" as i;
+@use "../foundation/variable" as v;
+@use "../functions/return_vw" as *;
+@use "sass:math";
+
+.wp-block-navigation {
+  height: 56px;
+}
+
+.wp-block-page-list {
+  li {
+    a {
+      color: #000;
+      font-size: math.div(16, v.$default-font-size) * 1rem;
+      line-height: math.div(16, 16);
+      font-weight: bold;
+    }
+  }
+}
+
+.wp-block-navigation__responsive-container.is-menu-open {
+  .wp-block-navigation__responsive-container-content {
+    ul.wp-block-navigation__container {
+      @include i.mq(xs, max, true) {
+        flex-flow: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        gap: 20px;
+      }
+      li.wp-block-navigation-item {
+        @include i.mq(xs, max, true) {
+          border-bottom: 1px solid v.$primary-color;
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        .wp-block-navigation-item__content {
+          @include i.mq(xs, max, true) {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 43px;
+            padding-bottom: 5px;
+          }
+        }
+      }
+    }
+  }
+}

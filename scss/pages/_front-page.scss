@@ -1,0 +1,195 @@
+@use "../foundation/import" as i;
+@use "../foundation/variable" as v;
+@use "../functions/return_vw" as *;
+@use "sass:math";
+
+// mv
+.wck-home-mv {
+  margin-block-end: 96px !important;
+  position: relative;
+  z-index: 10;
+  height: return_vw(1009px, 1810px);
+  overflow: hidden;
+  @include i.mq(xs, max, true) {
+    height: return_vw(574px, 375px);
+  }
+  &::before,
+  &::after {
+    content: '';
+    width: 100%;
+    height: return_vw(969px, 1810px);
+    position: absolute;
+    top: return_vw(40px, 1810px);
+    @include i.mq(xs, max, true) {
+      top: unset;
+      bottom: 0;
+      height: 90vw;
+    }
+  }
+  &::before {
+    animation: yurayura-nami 4s infinite linear 1s both;
+    background: image-set(url(../images/wave-left.png) 1x, url(../images/wave-left@2x.png) 2x) top center/100% auto no-repeat;
+    left: 0;
+    @include i.mq(xs, max, true) {
+      width: return_vw(569px, 375px);
+      height: return_vw(460px, 375px);
+      background: image-set(url(../images/sp-wave-left.png) 1x, url(../images/sp-wave-left@2x.png) 2x) top left -90px /100% auto no-repeat;
+    }
+  }
+  &::after {
+    animation: yurayura-nami 4s infinite linear 2s both;
+    background: image-set(url(../images/wave-right.png) 1x, url(../images/wave-right@2x.png) 2x) top center/100% auto no-repeat;
+    right: 0;
+    @include i.mq(xs, max, true) {
+      width: return_vw(551px, 375px);
+      height: return_vw(527px, 375px);
+      background: image-set(url(../images/sp-wave-right.png) 1x, url(../images/sp-wave-right@2x.png) 2x) bottom 5px right -110px /100% auto no-repeat;
+    }
+  }
+}
+
+@keyframes yurayura-nami {
+  0%,
+  100%{
+    transform: rotate(.5deg);
+  }
+  50%{
+    transform: rotate(-.5deg);
+  }
+}
+
+.wck-home-mv-inner {
+  height: return_vw(949px, 1440px);
+  padding-top: return_vw(246px, 1440px);
+  box-sizing: border-box;
+  position: relative;
+  z-index: 10;
+  @include i.mq(xs, max, true) {
+    height: auto;
+    padding-top: return_vw(104px, 375px);
+    gap: 0;
+  }
+}
+.wck-home-mv-logo {
+  @include i.mq(xs, max, true) {
+    margin-bottom: 20px !important;
+  }
+}
+
+.wck-home-mv-spacer {
+  @include i.mq(xs, max, true) {
+    flex-basis: 0 !important;
+  }
+}
+
+.wck-home-mv-info {
+  @include i.mq(xs, max, true) {
+    margin-bottom: 20px !important;
+  }
+}
+
+.wck-home-mv-info-date {
+  @include i.mq(xs, max, true) {
+    font-size: math.div(32, v.$default-font-size) * 1rem !important;
+    line-height: math.div(32, 32);
+    margin-bottom: 7px !important;
+  }
+  mark {
+    font-size: math.div(32, v.$default-font-size) * 1rem !important;
+    @include i.mq(xs, max, true) {
+      font-size: math.div(16, v.$default-font-size) * 1rem !important;
+      background: none;
+    }
+  }
+}
+
+.wck-home-mv-info-place-en {
+  @include i.mq(xs, max, true) {
+    font-size: math.div(16, v.$default-font-size) * 1rem !important;
+    margin-bottom: 4px !important;
+  }
+}
+
+.wck-home-mv-info-place-ja {
+  @include i.mq(xs, max, true) {
+    font-size: math.div(14, v.$default-font-size) * 1rem !important;
+    font-weight: 600;
+  }
+}
+
+.wck-home-mv-wapuu {
+  width: 360px;
+  position: absolute;
+  top: return_vw(380px, 1440px);
+  left: return_vw(902px, 1440px);
+  z-index: 1;
+  margin: 0 !important;
+  padding: 0 !important;
+  animation: yurayura-wapuu 2.5s infinite linear 0.5s both;
+  @include i.mq(xs, max, true) {
+    width: return_vw(188px, 375px);
+    transform: rotate(-8.63deg);
+    position: unset;
+    top: unset;
+    left: unset;
+  }
+}
+
+@keyframes yurayura-wapuu {
+  0%,
+  100%{
+    transform: rotate(2deg);
+  }
+  50%{
+    transform: rotate(-2deg);
+  }
+}
+
+.wck-home-content-bg {
+  position: relative;
+  overflow: hidden;
+  &::before,
+  &::after {
+    content: '';
+    display: inline-block;
+    width: 220px;
+    height: 2153px;
+    background-image: image-set(url(../images/bg_bubble.png) 1x, url(../images/bg_bubble@2x.png) 2x);
+    background-repeat: no-repeat;
+    background-position: top center;
+    position: absolute;
+    top: 0;
+    @include i.mq(xs, max, true) {
+      content: none;
+    }
+  }
+  &::before {
+    left: 0;
+  }
+  &::after {
+    right: 0;
+    transform: scale(-1, 1);
+  }
+}
+
+.wck-home-about {
+  background: url(../images/bg_bubble-about.png) top left no-repeat;
+  @include i.mq(xs, max, true) {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+
+.wck-home-access {
+  @include i.mq(xs, max, true) {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+
+.wck-home-map {
+  iframe {
+    width: 100%;
+    height: 260px;
+  }
+}

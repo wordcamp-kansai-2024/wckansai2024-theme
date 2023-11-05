@@ -1,0 +1,104 @@
+@use "../foundation/import" as i;
+@use "../foundation/variable" as v;
+@use "../functions/return_vw" as *;
+@use "sass:math";
+
+.wck-page-group {
+  position: relative;
+  overflow: hidden;
+  &::before,
+  &::after {
+    content: '';
+    display: inline-block;
+    width: 220px;
+    height: 2153px;
+    background-image: image-set(url(../images/bg_bubble.png) 1x, url(../images/bg_bubble@2x.png) 2x);
+    background-repeat: no-repeat;
+    background-position: top center;
+    position: absolute;
+    top: 0;
+    @include i.mq(xs, max, true) {
+      content: none;
+    }
+  }
+  &::before {
+    left: 0;
+  }
+  &::after {
+    right: 0;
+    transform: scale(-1, 1);
+  }
+}
+
+@media screen and (max-width: 998.9375px) {
+	.wck-page-group {
+		padding-right: 15px;
+		padding-left: 15px;
+	}
+}
+
+// mv
+.wck-page-mv {
+  padding-top: 80px;
+  padding-bottom: 40px;
+}
+
+.wck-page-mv-inner {
+  position: relative;
+}
+
+.wck-page-mv-logo {
+  img {
+    width: 450px !important;
+  }
+}
+
+// .wck-page-mv-info {}
+
+.wck-page-mv-info-date {
+  font-size: math.div(22, v.$default-font-size) * 1rem !important;
+  line-height: math.div(22, 22);
+  margin-bottom: 10px !important;
+  mark {
+    font-size: 70%;
+    background: none;
+  }
+}
+
+.wck-page-mv-info-place-en {
+  font-size: math.div(20, v.$default-font-size) * 1rem !important;
+  line-height: math.div(20, 20);
+}
+
+.wck-page-mv-info-place-ja {
+  font-size: math.div(20, v.$default-font-size) * 1rem !important;
+  line-height: math.div(20, 20);
+}
+
+.wck-page-mv-wapuu {
+  width: 150px;
+  position: absolute;
+  bottom: 0;
+  left: 67vw;
+  z-index: 1;
+  margin: 0 !important;
+  padding: 0 !important;
+  animation: yurayura-wapuu 2.5s infinite linear 0.5s both;
+  @include i.mq(xs, max, true) {
+    width: return_vw(188px, 375px);
+    transform: rotate(-8.63deg);
+    position: unset;
+    top: unset;
+    left: unset;
+  }
+}
+
+@keyframes yurayura-wapuu {
+  0%,
+  100%{
+    transform: rotate(2deg);
+  }
+  50%{
+    transform: rotate(-2deg);
+  }
+}
