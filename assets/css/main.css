@@ -273,11 +273,11 @@ footer.wp-block-template-part .wp-block-page-list li a:hover {
 }
 .wck-home-mv-info-date mark {
   font-size: 2rem !important;
+  background: none;
 }
 @media screen and (max-width: 998.9375px) {
   .wck-home-mv-info-date mark {
     font-size: 1rem !important;
-    background: none;
   }
 }
 
