@@ -377,6 +377,11 @@ footer.wp-block-template-part .wp-block-page-list li a:hover {
 body.page:not(.home) {
   background: url(https://raw.githubusercontent.com/wordcamp-kansai-2024/wckansai2024-theme/main/assets/images/fixed-page-hero-bgi.png) top 230px left/100% auto no-repeat;
 }
+@media screen and (max-width: 998.9375px) {
+  body.page:not(.home) {
+    background: url(https://raw.githubusercontent.com/wordcamp-kansai-2024/wckansai2024-theme/main/assets/images/fixed-page-hero-bgi.png) top 160px left/100% auto no-repeat;
+  }
+}
 
 .wck-page-group {
   position: relative;
@@ -418,7 +423,18 @@ body.page:not(.home) {
   padding-bottom: 40px;
   position: relative;
 }
+@media screen and (max-width: 998.9375px) {
+  .wck-page-mv {
+    padding-top: 56px;
+  }
+}
 
+@media screen and (max-width: 998.9375px) {
+  .wck-page-mv-logo {
+    padding-right: 3.7333333333vw;
+    padding-left: 3.7333333333vw;
+  }
+}
 .wck-page-mv-logo img {
   width: 450px !important;
 }
@@ -427,6 +443,11 @@ body.page:not(.home) {
   font-size: 2.25rem !important;
   line-height: 1;
   margin-bottom: 10px !important;
+}
+@media screen and (max-width: 998.9375px) {
+  .wck-page-mv-info-date {
+    font-size: 1.25rem !important;
+  }
 }
 .wck-page-mv-info-date mark {
   font-size: 66%;
@@ -437,10 +458,20 @@ body.page:not(.home) {
   font-size: 1.25rem !important;
   line-height: 1;
 }
+@media screen and (max-width: 998.9375px) {
+  .wck-page-mv-info-place-en {
+    font-size: 0.75rem !important;
+  }
+}
 
 .wck-page-mv-info-place-ja {
   font-size: 1rem !important;
   line-height: 1;
+}
+@media screen and (max-width: 998.9375px) {
+  .wck-page-mv-info-place-ja {
+    font-size: 0.625rem !important;
+  }
 }
 
 .wck-page-mv-wapuu {
@@ -455,11 +486,10 @@ body.page:not(.home) {
 }
 @media screen and (max-width: 998.9375px) {
   .wck-page-mv-wapuu {
-    width: 50.1333333333vw;
+    width: 76px;
     transform: rotate(-8.63deg);
-    position: unset;
-    top: unset;
-    left: unset;
+    top: 115px;
+    right: 7.7333333333vw;
   }
 }
 
