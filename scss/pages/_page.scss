@@ -5,7 +5,10 @@
 
 body.page {
   &:not(.home) {
-    background: url(../images/uploads/fixed-page-hero-bgi.png) top 230px left / 100% auto no-repeat;
+    background: url(../images/fixed-page-hero-bgi.png) top 230px left / 100% auto no-repeat;
+    @include i.mq(xs, max, true) {
+      background: url(../images/fixed-page-hero-bgi.png) top 160px left / 100% auto no-repeat;
+    }
   }
 }
 
@@ -48,13 +51,18 @@ body.page {
   padding-top: 90px;
   padding-bottom: 40px;
   position: relative;
+  @include i.mq(xs, max, true) {
+    padding-top: 56px;
+  }
 }
 
-// .wck-page-mv-inner {
-//   position: relative;
-// }
+// .wck-page-mv-inner {}
 
 .wck-page-mv-logo {
+  @include i.mq(xs, max, true) {
+    padding-right: return_vw(14px, 375px);
+    padding-left: return_vw(14px, 375px);
+  }
   img {
     width: 450px !important;
   }
@@ -66,6 +74,9 @@ body.page {
   font-size: math.div(36, v.$default-font-size) * 1rem !important;
   line-height: math.div(36, 36);
   margin-bottom: 10px !important;
+  @include i.mq(xs, max, true) {
+    font-size: math.div(20, v.$default-font-size) * 1rem !important;
+  }
   mark {
     font-size: 66%;
     background: none;
@@ -75,11 +86,17 @@ body.page {
 .wck-page-mv-info-place-en {
   font-size: math.div(20, v.$default-font-size) * 1rem !important;
   line-height: math.div(20, 20);
+  @include i.mq(xs, max, true) {
+    font-size: math.div(12, v.$default-font-size) * 1rem !important;
+  }
 }
 
 .wck-page-mv-info-place-ja {
   font-size: math.div(16, v.$default-font-size) * 1rem !important;
   line-height: math.div(16, 16);
+  @include i.mq(xs, max, true) {
+    font-size: math.div(10, v.$default-font-size) * 1rem !important;
+  }
 }
 
 .wck-page-mv-wapuu {
@@ -92,11 +109,10 @@ body.page {
   padding: 0 !important;
   animation: yurayura-wapuu 2.5s infinite linear 0.5s both;
   @include i.mq(xs, max, true) {
-    width: return_vw(188px, 375px);
+    width: 76px;
     transform: rotate(-8.63deg);
-    position: unset;
-    top: unset;
-    left: unset;
+    top: 115px;
+    right: return_vw(29px, 375px);
   }
 }
 
