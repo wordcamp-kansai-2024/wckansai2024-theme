@@ -111,8 +111,10 @@ body.page {
   @include i.mq(xs, max, true) {
     width: 76px;
     transform: rotate(-8.63deg);
-    top: 115px;
-    right: return_vw(29px, 375px);
+    // top: 115px;
+    // right: return_vw(29px, 375px);
+    top: 123px;
+    right: 2vw  ;
   }
 }
 
