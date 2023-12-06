@@ -14,8 +14,8 @@ body {
 header.wp-block-template-part {
   width: auto;
   max-width: 1000px;
-  padding-right: 40px;
-  padding-left: 40px;
+  padding-right: 30px;
+  padding-left: 30px;
   box-sizing: border-box;
   border-radius: 0 0 8px 8px;
   box-shadow: 0px 2px 8px 0 rgba(0, 0, 0, 0.25);
@@ -374,6 +374,10 @@ footer.wp-block-template-part .wp-block-page-list li a:hover {
   height: 260px;
 }
 
+body.page:not(.home) {
+  background: url(https://raw.githubusercontent.com/wordcamp-kansai-2024/wckansai2024-theme/main/assets/images/fixed-page-hero-bgi.png) top 230px left/100% auto no-repeat;
+}
+
 .wck-page-group {
   position: relative;
   overflow: hidden;
@@ -410,11 +414,8 @@ footer.wp-block-template-part .wp-block-page-list li a:hover {
   }
 }
 .wck-page-mv {
-  padding-top: 80px;
+  padding-top: 90px;
   padding-bottom: 40px;
-}
-
-.wck-page-mv-inner {
   position: relative;
 }
 
@@ -423,12 +424,12 @@ footer.wp-block-template-part .wp-block-page-list li a:hover {
 }
 
 .wck-page-mv-info-date {
-  font-size: 1.375rem !important;
+  font-size: 2.25rem !important;
   line-height: 1;
   margin-bottom: 10px !important;
 }
 .wck-page-mv-info-date mark {
-  font-size: 70%;
+  font-size: 66%;
   background: none;
 }
 
@@ -438,15 +439,15 @@ footer.wp-block-template-part .wp-block-page-list li a:hover {
 }
 
 .wck-page-mv-info-place-ja {
-  font-size: 1.25rem !important;
+  font-size: 1rem !important;
   line-height: 1;
 }
 
 .wck-page-mv-wapuu {
-  width: 150px;
+  width: 180px;
   position: absolute;
-  bottom: 0;
-  left: 67vw;
+  top: 145px;
+  right: 21.3194444444vw;
   z-index: 1;
   margin: 0 !important;
   padding: 0 !important;
