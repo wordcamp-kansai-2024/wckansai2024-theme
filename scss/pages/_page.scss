@@ -3,6 +3,12 @@
 @use "../functions/return_vw" as *;
 @use "sass:math";
 
+body.page {
+  &:not(.home) {
+    background: url(../images/uploads/fixed-page-hero-bgi.png) top 230px left / 100% auto no-repeat;
+  }
+}
+
 .wck-page-group {
   position: relative;
   overflow: hidden;
@@ -39,13 +45,14 @@
 
 // mv
 .wck-page-mv {
-  padding-top: 80px;
+  padding-top: 90px;
   padding-bottom: 40px;
-}
-
-.wck-page-mv-inner {
   position: relative;
 }
+
+// .wck-page-mv-inner {
+//   position: relative;
+// }
 
 .wck-page-mv-logo {
   img {
@@ -56,11 +63,11 @@
 // .wck-page-mv-info {}
 
 .wck-page-mv-info-date {
-  font-size: math.div(22, v.$default-font-size) * 1rem !important;
-  line-height: math.div(22, 22);
+  font-size: math.div(36, v.$default-font-size) * 1rem !important;
+  line-height: math.div(36, 36);
   margin-bottom: 10px !important;
   mark {
-    font-size: 70%;
+    font-size: 66%;
     background: none;
   }
 }
@@ -71,15 +78,15 @@
 }
 
 .wck-page-mv-info-place-ja {
-  font-size: math.div(20, v.$default-font-size) * 1rem !important;
-  line-height: math.div(20, 20);
+  font-size: math.div(16, v.$default-font-size) * 1rem !important;
+  line-height: math.div(16, 16);
 }
 
 .wck-page-mv-wapuu {
-  width: 150px;
+  width: 180px;
   position: absolute;
-  bottom: 0;
-  left: 67vw;
+  top: 145px;
+  right: return_vw(307px, 1440px);
   z-index: 1;
   margin: 0 !important;
   padding: 0 !important;
