@@ -162,28 +162,6 @@ footer.wp-block-template-part .wp-block-page-list li a:hover {
   display: block;
 }
 
-.wp-block-post-title {
-  position: relative;
-  text-transform: uppercase;
-  color: #000;
-  font-size: 2.25rem;
-  line-height: 1.8;
-  font-weight: 700;
-  text-align: center;
-}
-.wp-block-post-title::after {
-  content: "";
-  width: 261px;
-  height: 18px;
-  background: -webkit-image-set(url(https://raw.githubusercontent.com/wordcamp-kansai-2024/wckansai2024-theme/main/assets/images/heading-bgi.png) 1x, url(https://raw.githubusercontent.com/wordcamp-kansai-2024/wckansai2024-theme/main/assets/images/heading-bgi@2x.png) 2x) top center/100% auto no-repeat;
-  background: image-set(url(https://raw.githubusercontent.com/wordcamp-kansai-2024/wckansai2024-theme/main/assets/images/heading-bgi.png) 1x, url(https://raw.githubusercontent.com/wordcamp-kansai-2024/wckansai2024-theme/main/assets/images/heading-bgi@2x.png) 2x) top center/100% auto no-repeat;
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  transform: translateX(-50%);
-  display: block;
-}
-
 @media screen and (max-width: 998.9375px) {
   .sp-is-content-justification-center {
     justify-content: center !important;
