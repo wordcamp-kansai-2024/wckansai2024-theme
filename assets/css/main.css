@@ -523,3 +523,24 @@ body.page:not(.home) {
     transform: rotate(-2deg);
   }
 }
+.tix_tickets_table {
+  width: 100%;
+  border: 1px solid;
+  border-spacing: 0;
+}
+.tix_tickets_table thead th {
+  background: #ededed;
+}
+.tix_tickets_table th,
+.tix_tickets_table td {
+  border-bottom: 1px solid #000;
+  padding: 10px;
+  border-spacing: 0;
+  text-align: center;
+}
+.tix_tickets_table tr th:first-child {
+  text-align: left;
+}
+.tix_tickets_table select {
+  padding: 0.5em 1em;
+}

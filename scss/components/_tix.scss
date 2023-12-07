@@ -1,0 +1,27 @@
+.tix_tickets_table {
+  width: 100%;
+  border: 1px solid;
+  border-spacing: 0;
+  thead {
+    th {
+      background: #ededed;
+    }
+  }
+  th,
+  td {
+    border-bottom: 1px solid #000;
+    padding: 10px;
+    border-spacing: 0;
+    text-align: center;
+  }
+  tr {
+    th {
+      &:first-child {
+        text-align: left;
+      }
+    }
+  }
+  select {
+    padding: .5em 1em;
+  }
+}
