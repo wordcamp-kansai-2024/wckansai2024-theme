@@ -4,8 +4,7 @@
 @use "sass:math";
 
 header.wp-block-template-part {
-  width: auto;
-  max-width: v.$content-width;
+  width: v.$content-width;
   padding-right: 30px;
 	padding-left: 30px;
   box-sizing: border-box;

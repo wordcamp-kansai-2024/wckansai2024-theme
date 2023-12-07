@@ -12,8 +12,7 @@ body {
 }
 
 header.wp-block-template-part {
-  width: auto;
-  max-width: 1000px;
+  width: 1000px;
   padding-right: 30px;
   padding-left: 30px;
   box-sizing: border-box;
@@ -44,7 +43,8 @@ header.wp-block-template-part {
   }
 }
 .wp-block-navigation {
-  height: 56px;
+  min-height: 56px;
+  gap: 10px 15px;
 }
 
 .wp-block-page-list li a {
@@ -386,6 +386,12 @@ body.page:not(.home) {
 .wck-page-group {
   position: relative;
   overflow: hidden;
+  padding-top: 180px;
+}
+@media screen and (max-width: 998.9375px) {
+  .wck-page-group {
+    padding-top: 40px;
+  }
 }
 .wck-page-group::before, .wck-page-group::after {
   content: "";
