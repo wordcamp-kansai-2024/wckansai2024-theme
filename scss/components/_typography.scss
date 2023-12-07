@@ -24,24 +24,3 @@
     }
   }
 }
-
-.wp-block-post-title {
-  position: relative;
-  text-transform: uppercase;
-  color: #000;
-  font-size: math.div(36, v.$default-font-size) * 1rem;
-  line-height: 1.8;
-  font-weight: 700;
-  text-align: center;
-  &::after {
-    content: '';
-    width: 261px;
-    height: 18px;
-    background: image-set(url(../images/heading-bgi.png) 1x, url(../images/heading-bgi@2x.png) 2x) top center/100% auto no-repeat;
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    transform: translateX(-50%);
-    display: block;
-  }
-}
