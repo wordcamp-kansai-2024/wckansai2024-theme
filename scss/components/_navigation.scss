@@ -4,7 +4,8 @@
 @use "sass:math";
 
 .wp-block-navigation {
-  height: 56px;
+  min-height: 56px;
+  gap: 10px 15px;
 }
 
 .wp-block-page-list {

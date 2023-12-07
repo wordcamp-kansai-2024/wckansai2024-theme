@@ -15,6 +15,10 @@ body.page {
 .wck-page-group {
   position: relative;
   overflow: hidden;
+  padding-top: 180px;
+  @include i.mq(xs, max, true) {
+    padding-top: 40px;
+  }
   &::before,
   &::after {
     content: '';
