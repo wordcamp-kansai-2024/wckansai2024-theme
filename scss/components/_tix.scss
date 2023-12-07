@@ -1,4 +1,12 @@
+@use "../foundation/import" as i;
+@use "../foundation/variable" as v;
+@use "../functions/return_vw" as *;
+@use "sass:math";
+
 #tix {
+  @include i.mq(s, max, true) {
+    overflow-x: scroll;
+  }
   input[type="submit"] {
     border-radius: 34px;
     background-color: #ff8800;
@@ -37,6 +45,9 @@
     border-spacing: 0;
     text-align: center;
     font-size: var(--wp--preset--font-size--small);
+    @include i.mq(s, max, true) {
+      padding: 15px;
+    }
   }
   tr {
     th {
