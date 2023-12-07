@@ -506,6 +506,28 @@ body.page:not(.home) {
     overflow-x: scroll;
   }
 }
+
+#tix h2 {
+  position: relative;
+  text-transform: uppercase;
+  color: #000;
+  font-size: 2.25rem;
+  line-height: 1;
+  font-weight: 500;
+}
+#tix h2::after {
+  content: "";
+  width: 261px;
+  height: 18px;
+  background: -webkit-image-set(url(https://raw.githubusercontent.com/wordcamp-kansai-2024/wckansai2024-theme/main/assets/images/heading-bgi.png) 1x, url(https://raw.githubusercontent.com/wordcamp-kansai-2024/wckansai2024-theme/main/assets/images/heading-bgi@2x.png) 2x) top center/100% auto no-repeat;
+  background: image-set(url(https://raw.githubusercontent.com/wordcamp-kansai-2024/wckansai2024-theme/main/assets/images/heading-bgi.png) 1x, url(https://raw.githubusercontent.com/wordcamp-kansai-2024/wckansai2024-theme/main/assets/images/heading-bgi@2x.png) 2x) top center/100% auto no-repeat;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: block;
+}
+
 #tix .tix-submit input[type=submit].tix-checkout-button,
 #tix input[type=submit] {
   border-radius: 34px;
@@ -555,6 +577,7 @@ body.page:not(.home) {
   text-align: left;
 }
 .tix_tickets_table input[type=text],
+.tix_tickets_table input[type=email],
 .tix_tickets_table select {
   padding: 0.8em 1em;
   font-size: var(--wp--preset--font-size--small);
