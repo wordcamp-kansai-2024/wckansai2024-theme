@@ -523,6 +523,11 @@ body.page:not(.home) {
     transform: rotate(-2deg);
   }
 }
+@media screen and (max-width: 599.9375px) {
+  #tix {
+    overflow-x: scroll;
+  }
+}
 #tix input[type=submit] {
   border-radius: 34px;
   background-color: #ff8800;
@@ -553,6 +558,12 @@ body.page:not(.home) {
   border-spacing: 0;
   text-align: center;
   font-size: var(--wp--preset--font-size--small);
+}
+@media screen and (max-width: 599.9375px) {
+  .tix_tickets_table th,
+  .tix_tickets_table td {
+    padding: 15px;
+  }
 }
 .tix_tickets_table tr th:first-child {
   text-align: left;
