@@ -631,38 +631,6 @@ body.page:not(.home) {
   font-size: var(--wp--preset--font-size--small);
 }
 
-.tix_tickets_table.tix-attendee-form tbody th {
-  background: #ededed;
-}
-.tix_tickets_table.tix-attendee-form tbody th,
-.tix_tickets_table.tix-attendee-form tbody td {
-  padding: 15px 18px;
-  border-spacing: 0;
-  text-align: left;
-  font-size: var(--wp--preset--font-size--small);
-}
-@media screen and (max-width: 599.9375px) {
-  .tix_tickets_table.tix-attendee-form tbody th,
-  .tix_tickets_table.tix-attendee-form tbody td {
-    padding: 15px;
-  }
-}
-
-.tix_tickets_table.tix-order-summary th,
-.tix_tickets_table.tix-order-summary td {
-  border-bottom: 1px solid #000;
-  padding: 15px 18px;
-  border-spacing: 0;
-  text-align: center;
-  font-size: var(--wp--preset--font-size--small);
-}
-@media screen and (max-width: 599.9375px) {
-  .tix_tickets_table.tix-order-summary th,
-  .tix_tickets_table.tix-order-summary td {
-    padding: 15px;
-  }
-}
-
 ul.tix-attendee-list.tix-columns-3 {
   display: flex;
   flex-wrap: wrap;
@@ -670,6 +638,11 @@ ul.tix-attendee-list.tix-columns-3 {
   list-style: none;
   padding-left: 0;
   gap: 80px 0.5%;
+}
+@media screen and (max-width: 998.9375px) {
+  ul.tix-attendee-list.tix-columns-3 {
+    gap: 40px 0.5%;
+  }
 }
 ul.tix-attendee-list.tix-columns-3 li {
   flex-basis: 33%;
