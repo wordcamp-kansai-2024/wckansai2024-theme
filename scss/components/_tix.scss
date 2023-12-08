@@ -63,6 +63,7 @@
 /*
 .tix_tickets_table: チケット購入画面の共通テーブルクラス
 .tix-ticket-form: チケット購入後に
+.tix-attendee-form: 参加者情報・返金リクエスト
 */
 .tix-ticket-form,
 .tix_tickets_table {
@@ -70,6 +71,7 @@
   border: 1px solid;
   border-spacing: 0;
   margin-bottom: 80px;
+  background-color: #fff;
   @include i.mq(s, max, true) {
     margin-bottom: 50px;
   }
@@ -117,29 +119,11 @@
   input,
   input[type="text"],
   input[type="email"],
-  select {
+  select,
+  textarea {
     padding: 0.8em 1em;
     font-size: var(--wp--preset--font-size--small);
   }
   // &.tix-order-summary {}
+  // &.tix-attendee-form {}
 }
-
-// .tix_tickets_table {
-//   &.tix-attendee-form {
-//     tbody {
-//       th {
-//         background: #ededed;
-//       }
-//       th,
-//       td {
-//         padding: 15px 18px;
-//         border-spacing: 0;
-//         text-align: left;
-//         font-size: var(--wp--preset--font-size--small);
-//         @include i.mq(s, max, true) {
-//           padding: 15px;
-//         }
-//       }
-//     }
-//   }
-// }
