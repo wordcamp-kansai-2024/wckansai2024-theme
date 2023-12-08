@@ -1,0 +1,30 @@
+@use "../foundation/import" as i;
+@use "../foundation/variable" as v;
+@use "../functions/return_vw" as *;
+@use "sass:math";
+
+// #tix-attendees {}
+
+ul.tix-attendee-list {
+  &.tix-columns-3 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    list-style: none;
+    padding-left: 0;
+    gap: 80px 0.5%;
+    li {
+      flex-basis: 33%;
+      display: flex;
+      flex-flow: column;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 5px;
+    }
+  }
+}
+
+a.tix-attendee-twitter,
+a.tix-attendee-url {
+  display: block;
+}
