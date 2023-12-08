@@ -37,18 +37,34 @@
 
 // input[type="submit"]
 #tix {
-  .tix-submit input[type="submit"].tix-checkout-button,
-  input[type="submit"] {
-    border-radius: 34px;
-    background-color: #ff8800;
-    border: 0px none;
-    color: #FFF;
-    padding: calc(0.667em + 2px) calc(1.333em + 2px);
-    font-size: var(--wp--preset--font-size--medium);
-    font-weight: bold;
+  .tix-submit {
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    align-items: center;
+    gap: 30px;
+    input[type="submit"].tix-checkout-button,
+    input[type="submit"] {
+      border-radius: 34px;
+      background-color: #ff8800;
+      border: 0px none;
+      color: #FFF;
+      padding: calc(0.667em + 2px) calc(1.333em + 2px);
+      font-size: var(--wp--preset--font-size--medium);
+      font-weight: bold;
+    }
   }
 }
 
+.tix-description {
+  margin-bottom: 2em;
+}
+
+/*
+.tix_tickets_table: チケット購入画面の共通テーブルクラス
+.tix-ticket-form: チケット購入後に
+*/
+.tix-ticket-form,
 .tix_tickets_table {
   width: 100%;
   border: 1px solid;
@@ -73,7 +89,7 @@
     border-bottom: 1px solid #000;
     padding: 15px 18px;
     border-spacing: 0;
-    text-align: center;
+    text-align: left;
     font-size: var(--wp--preset--font-size--small);
     @include i.mq(s, max, true) {
       padding: 15px;
@@ -112,7 +128,7 @@
       td {
         padding: 15px 18px;
         border-spacing: 0;
-        text-align: center;
+        text-align: left;
         font-size: var(--wp--preset--font-size--small);
         @include i.mq(s, max, true) {
           padding: 15px;
