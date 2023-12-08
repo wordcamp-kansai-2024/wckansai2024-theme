@@ -13,6 +13,9 @@ ul.tix-attendee-list {
     list-style: none;
     padding-left: 0;
     gap: 80px 0.5%;
+    @include i.mq(xs, max, true) {
+      gap: 40px 0.5%;
+    }
     li {
       flex-basis: 33%;
       display: flex;
