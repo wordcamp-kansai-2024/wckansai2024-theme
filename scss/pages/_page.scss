@@ -3,7 +3,8 @@
 @use "../functions/return_vw" as *;
 @use "sass:math";
 
-body.page {
+body.page,
+body.single {
   &:not(.home) {
     background: url(../images/fixed-page-hero-bgi.png) top 230px left / 100% auto no-repeat;
     @include i.mq(xs, max, true) {

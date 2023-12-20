@@ -373,11 +373,13 @@ footer.wp-block-template-part .wp-block-page-list li a:hover {
   height: 260px;
 }
 
-body.page:not(.home) {
+body.page:not(.home),
+body.single:not(.home) {
   background: url(https://raw.githubusercontent.com/wordcamp-kansai-2024/wckansai2024-theme/main/assets/images/fixed-page-hero-bgi.png) top 230px left/100% auto no-repeat;
 }
 @media screen and (max-width: 998.9375px) {
-  body.page:not(.home) {
+  body.page:not(.home),
+  body.single:not(.home) {
     background: url(https://raw.githubusercontent.com/wordcamp-kansai-2024/wckansai2024-theme/main/assets/images/fixed-page-hero-bgi.png) top 160px left/100% auto no-repeat;
   }
 }
