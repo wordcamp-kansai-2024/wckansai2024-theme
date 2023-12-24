@@ -646,7 +646,7 @@ ul.tix-attendee-list.tix-columns-3 {
 }
 @media screen and (max-width: 998.9375px) {
   ul.tix-attendee-list.tix-columns-3 {
-    gap: 40px 0.5%;
+    gap: 40px 10%;
   }
 }
 ul.tix-attendee-list.tix-columns-3 li {
@@ -657,10 +657,21 @@ ul.tix-attendee-list.tix-columns-3 li {
   align-items: center;
   gap: 5px;
 }
+@media screen and (max-width: 998.9375px) {
+  ul.tix-attendee-list.tix-columns-3 li {
+    flex-basis: 45%;
+  }
+}
+
+.tix-field.tix-attendee-name {
+  text-align: center;
+}
 
 a.tix-attendee-twitter,
 a.tix-attendee-url {
   display: block;
+  word-break: break-all;
+  text-align: center;
 }
 
 body.page-slug-organizers .sharedaddy {
