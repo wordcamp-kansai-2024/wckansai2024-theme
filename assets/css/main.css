@@ -93,7 +93,7 @@ footer.wp-block-template-part::before {
   display: inline-block;
   width: 100%;
   height: 8px;
-  background: url(https://raw.githubusercontent.com/wordcamp-kansai-2024/wckansai2024-theme/main/assets/images/footer-repeat-bg.png) top left/65px 8px repeat-x;
+  background: url(../images/footer-repeat-bg.png) top left/65px 8px repeat-x;
   position: absolute;
   top: -8px;
   left: 0;
@@ -103,7 +103,7 @@ footer.wp-block-template-part::after {
   display: inline-block;
   width: 239px;
   height: 94px;
-  background: url(https://raw.githubusercontent.com/wordcamp-kansai-2024/wckansai2024-theme/main/assets/images/img_ship.png) top left/100% auto no-repeat;
+  background: url(../images/img_ship.png) top left/100% auto no-repeat;
   animation: yurayura-ship 5s infinite ease-in-out 0.5s both;
   position: absolute;
   top: -85px;
@@ -152,8 +152,8 @@ footer.wp-block-template-part .wp-block-page-list li a:hover {
   content: "";
   width: 261px;
   height: 18px;
-  background: -webkit-image-set(url(https://raw.githubusercontent.com/wordcamp-kansai-2024/wckansai2024-theme/main/assets/images/heading-bgi.png) 1x, url(https://raw.githubusercontent.com/wordcamp-kansai-2024/wckansai2024-theme/main/assets/images/heading-bgi@2x.png) 2x) top center/100% auto no-repeat;
-  background: image-set(url(https://raw.githubusercontent.com/wordcamp-kansai-2024/wckansai2024-theme/main/assets/images/heading-bgi.png) 1x, url(https://raw.githubusercontent.com/wordcamp-kansai-2024/wckansai2024-theme/main/assets/images/heading-bgi@2x.png) 2x) top center/100% auto no-repeat;
+  background: -webkit-image-set(url(../images/heading-bgi.png) 1x, url(../images/heading-bgi@2x.png) 2x) top center/100% auto no-repeat;
+  background: image-set(url(../images/heading-bgi.png) 1x, url(../images/heading-bgi@2x.png) 2x) top center/100% auto no-repeat;
   position: absolute;
   top: 100%;
   left: 50%;
@@ -195,30 +195,30 @@ footer.wp-block-template-part .wp-block-page-list li a:hover {
 }
 .wck-home-mv::before {
   animation: yurayura-nami 4s infinite linear 1s both;
-  background: -webkit-image-set(url(https://raw.githubusercontent.com/wordcamp-kansai-2024/wckansai2024-theme/main/assets/images/wave-left.png) 1x, url(https://raw.githubusercontent.com/wordcamp-kansai-2024/wckansai2024-theme/main/assets/images/wave-left@2x.png) 2x) top center/100% auto no-repeat;
-  background: image-set(url(https://raw.githubusercontent.com/wordcamp-kansai-2024/wckansai2024-theme/main/assets/images/wave-left.png) 1x, url(https://raw.githubusercontent.com/wordcamp-kansai-2024/wckansai2024-theme/main/assets/images/wave-left@2x.png) 2x) top center/100% auto no-repeat;
+  background: -webkit-image-set(url(../images/wave-left.png) 1x, url(../images/wave-left@2x.png) 2x) top center/100% auto no-repeat;
+  background: image-set(url(../images/wave-left.png) 1x, url(../images/wave-left@2x.png) 2x) top center/100% auto no-repeat;
   left: 0;
 }
 @media screen and (max-width: 998.9375px) {
   .wck-home-mv::before {
     width: 151.7333333333vw;
     height: 122.6666666667vw;
-    background: -webkit-image-set(url(https://raw.githubusercontent.com/wordcamp-kansai-2024/wckansai2024-theme/main/assets/images/sp-wave-left.png) 1x, url(https://raw.githubusercontent.com/wordcamp-kansai-2024/wckansai2024-theme/main/assets/images/sp-wave-left@2x.png) 2x) top left -90px/100% auto no-repeat;
-    background: image-set(url(https://raw.githubusercontent.com/wordcamp-kansai-2024/wckansai2024-theme/main/assets/images/sp-wave-left.png) 1x, url(https://raw.githubusercontent.com/wordcamp-kansai-2024/wckansai2024-theme/main/assets/images/sp-wave-left@2x.png) 2x) top left -90px/100% auto no-repeat;
+    background: -webkit-image-set(url(../images/sp-wave-left.png) 1x, url(../images/sp-wave-left@2x.png) 2x) top left -90px/100% auto no-repeat;
+    background: image-set(url(../images/sp-wave-left.png) 1x, url(../images/sp-wave-left@2x.png) 2x) top left -90px/100% auto no-repeat;
   }
 }
 .wck-home-mv::after {
   animation: yurayura-nami 4s infinite linear 2s both;
-  background: -webkit-image-set(url(https://raw.githubusercontent.com/wordcamp-kansai-2024/wckansai2024-theme/main/assets/images/wave-right.png) 1x, url(https://raw.githubusercontent.com/wordcamp-kansai-2024/wckansai2024-theme/main/assets/images/wave-right@2x.png) 2x) top center/100% auto no-repeat;
-  background: image-set(url(https://raw.githubusercontent.com/wordcamp-kansai-2024/wckansai2024-theme/main/assets/images/wave-right.png) 1x, url(https://raw.githubusercontent.com/wordcamp-kansai-2024/wckansai2024-theme/main/assets/images/wave-right@2x.png) 2x) top center/100% auto no-repeat;
+  background: -webkit-image-set(url(../images/wave-right.png) 1x, url(../images/wave-right@2x.png) 2x) top center/100% auto no-repeat;
+  background: image-set(url(../images/wave-right.png) 1x, url(../images/wave-right@2x.png) 2x) top center/100% auto no-repeat;
   right: 0;
 }
 @media screen and (max-width: 998.9375px) {
   .wck-home-mv::after {
     width: 146.9333333333vw;
     height: 140.5333333333vw;
-    background: -webkit-image-set(url(https://raw.githubusercontent.com/wordcamp-kansai-2024/wckansai2024-theme/main/assets/images/sp-wave-right.png) 1x, url(https://raw.githubusercontent.com/wordcamp-kansai-2024/wckansai2024-theme/main/assets/images/sp-wave-right@2x.png) 2x) bottom 5px right -110px/100% auto no-repeat;
-    background: image-set(url(https://raw.githubusercontent.com/wordcamp-kansai-2024/wckansai2024-theme/main/assets/images/sp-wave-right.png) 1x, url(https://raw.githubusercontent.com/wordcamp-kansai-2024/wckansai2024-theme/main/assets/images/sp-wave-right@2x.png) 2x) bottom 5px right -110px/100% auto no-repeat;
+    background: -webkit-image-set(url(../images/sp-wave-right.png) 1x, url(../images/sp-wave-right@2x.png) 2x) bottom 5px right -110px/100% auto no-repeat;
+    background: image-set(url(../images/sp-wave-right.png) 1x, url(../images/sp-wave-right@2x.png) 2x) bottom 5px right -110px/100% auto no-repeat;
   }
 }
 
@@ -331,8 +331,8 @@ footer.wp-block-template-part .wp-block-page-list li a:hover {
   display: inline-block;
   width: 220px;
   height: 2153px;
-  background-image: -webkit-image-set(url(https://raw.githubusercontent.com/wordcamp-kansai-2024/wckansai2024-theme/main/assets/images/bg_bubble.png) 1x, url(https://raw.githubusercontent.com/wordcamp-kansai-2024/wckansai2024-theme/main/assets/images/bg_bubble@2x.png) 2x);
-  background-image: image-set(url(https://raw.githubusercontent.com/wordcamp-kansai-2024/wckansai2024-theme/main/assets/images/bg_bubble.png) 1x, url(https://raw.githubusercontent.com/wordcamp-kansai-2024/wckansai2024-theme/main/assets/images/bg_bubble@2x.png) 2x);
+  background-image: -webkit-image-set(url(../images/bg_bubble.png) 1x, url(../images/bg_bubble@2x.png) 2x);
+  background-image: image-set(url(../images/bg_bubble.png) 1x, url(../images/bg_bubble@2x.png) 2x);
   background-repeat: no-repeat;
   background-position: top center;
   position: absolute;
@@ -352,7 +352,7 @@ footer.wp-block-template-part .wp-block-page-list li a:hover {
 }
 
 .wck-home-about {
-  background: url(https://raw.githubusercontent.com/wordcamp-kansai-2024/wckansai2024-theme/main/assets/images/bg_bubble-about.png) top left no-repeat;
+  background: url(../images/bg_bubble-about.png) top left no-repeat;
 }
 @media screen and (max-width: 998.9375px) {
   .wck-home-about {
@@ -375,12 +375,12 @@ footer.wp-block-template-part .wp-block-page-list li a:hover {
 
 body.page:not(.home),
 body.single:not(.home) {
-  background: url(https://raw.githubusercontent.com/wordcamp-kansai-2024/wckansai2024-theme/main/assets/images/fixed-page-hero-bgi.png) top 230px left/100% auto no-repeat;
+  background: url(../images/fixed-page-hero-bgi.png) top 230px left/100% auto no-repeat;
 }
 @media screen and (max-width: 998.9375px) {
   body.page:not(.home),
   body.single:not(.home) {
-    background: url(https://raw.githubusercontent.com/wordcamp-kansai-2024/wckansai2024-theme/main/assets/images/fixed-page-hero-bgi.png) top 160px left/100% auto no-repeat;
+    background: url(../images/fixed-page-hero-bgi.png) top 160px left/100% auto no-repeat;
   }
 }
 
@@ -399,8 +399,8 @@ body.single:not(.home) {
   display: inline-block;
   width: 220px;
   height: 2153px;
-  background-image: -webkit-image-set(url(https://raw.githubusercontent.com/wordcamp-kansai-2024/wckansai2024-theme/main/assets/images/bg_bubble.png) 1x, url(https://raw.githubusercontent.com/wordcamp-kansai-2024/wckansai2024-theme/main/assets/images/bg_bubble@2x.png) 2x);
-  background-image: image-set(url(https://raw.githubusercontent.com/wordcamp-kansai-2024/wckansai2024-theme/main/assets/images/bg_bubble.png) 1x, url(https://raw.githubusercontent.com/wordcamp-kansai-2024/wckansai2024-theme/main/assets/images/bg_bubble@2x.png) 2x);
+  background-image: -webkit-image-set(url(../images/bg_bubble.png) 1x, url(../images/bg_bubble@2x.png) 2x);
+  background-image: image-set(url(../images/bg_bubble.png) 1x, url(../images/bg_bubble@2x.png) 2x);
   background-repeat: no-repeat;
   background-position: top center;
   position: absolute;
@@ -528,8 +528,8 @@ body.single:not(.home) {
   content: "";
   width: 261px;
   height: 18px;
-  background: -webkit-image-set(url(https://raw.githubusercontent.com/wordcamp-kansai-2024/wckansai2024-theme/main/assets/images/heading-bgi.png) 1x, url(https://raw.githubusercontent.com/wordcamp-kansai-2024/wckansai2024-theme/main/assets/images/heading-bgi@2x.png) 2x) top center/100% auto no-repeat;
-  background: image-set(url(https://raw.githubusercontent.com/wordcamp-kansai-2024/wckansai2024-theme/main/assets/images/heading-bgi.png) 1x, url(https://raw.githubusercontent.com/wordcamp-kansai-2024/wckansai2024-theme/main/assets/images/heading-bgi@2x.png) 2x) top center/100% auto no-repeat;
+  background: -webkit-image-set(url(../images/heading-bgi.png) 1x, url(../images/heading-bgi@2x.png) 2x) top center/100% auto no-repeat;
+  background: image-set(url(../images/heading-bgi.png) 1x, url(../images/heading-bgi@2x.png) 2x) top center/100% auto no-repeat;
   position: absolute;
   top: 100%;
   left: 50%;
@@ -690,4 +690,8 @@ ul.wordcamp-organizers.has-grid-columns-2 {
 }
 ul.wordcamp-organizers.has-grid-columns-2 li.wordcamp-post-list__post .wordcamp-block__item-title.wordcamp-organizers__title {
   font-size: 1.5rem;
+}
+
+.page-slug-sessions .wp-block-wordcamp-schedule .wordcamp-schedule__date {
+  display: none;
 }
