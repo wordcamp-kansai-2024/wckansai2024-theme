@@ -695,3 +695,6 @@ ul.wordcamp-organizers.has-grid-columns-2 li.wordcamp-post-list__post .wordcamp-
 .page-slug-sessions .wp-block-wordcamp-schedule .wordcamp-schedule__date {
   display: none;
 }
+.page-slug-sessions .wordcamp-sessions .wordcamp-sessions__details .wordcamp-sessions__time-location {
+  display: none;
+}
