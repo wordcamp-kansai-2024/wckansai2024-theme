@@ -19,5 +19,9 @@ $ npm install
 main.css の画像パスを GitHub のものに変更してください
 
 ```
+../images/
+```
+
+```
 https://raw.githubusercontent.com/wordcamp-kansai-2024/wckansai2024-theme/main/assets/images/
 ```
