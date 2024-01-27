@@ -1,0 +1,12 @@
+@use "../foundation/import" as i;
+@use "../foundation/variable" as v;
+@use "../functions/return_vw" as *;
+@use "sass:math";
+
+.page-slug-sessions {
+  .wp-block-wordcamp-schedule {
+    .wordcamp-schedule__date {
+      display: none;
+    }
+  }
+}
