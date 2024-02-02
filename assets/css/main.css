@@ -777,6 +777,10 @@ ul.wordcamp-organizers.has-grid-columns-2 li.wordcamp-post-list__post .wordcamp-
     background-color: #51C9AB;
     color: #FFF;
   }
+  .wp-block-wordcamp-schedule .wordcamp-schedule .wordcamp-schedule__day .wordcamp-schedule__session.has-track-502.has-track-507 .wordcamp-schedule__session-tracks dd:nth-of-type(2) {
+    background-color: #51C9AB;
+    color: #FFF;
+  }
   .wp-block-wordcamp-schedule .wordcamp-schedule .wordcamp-schedule__day .wordcamp-schedule__session.has-track-502.has-track-507.has-track-508 .wordcamp-schedule__session-tracks dd:nth-of-type(3) {
     background-color: #A993E1;
     color: #FFF;
