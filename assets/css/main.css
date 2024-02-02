@@ -704,7 +704,8 @@ ul.wordcamp-organizers.has-grid-columns-2 li.wordcamp-post-list__post .wordcamp-
 }
 .wordcamp-sponsors li .wordcamp-sponsor .wordcamp-sponsors__title {
   margin-block-start: 0;
-  font-size: var(--wp--preset--font-size--large);
+  margin-block-end: 0;
+  font-size: 1.4rem;
 }
 .wordcamp-sponsors li .wordcamp-sponsor .wordcamp-sponsors__title a {
   color: var(--wp--preset--color--custom-main);

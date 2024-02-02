@@ -9,7 +9,8 @@
     .wordcamp-sponsor {
       .wordcamp-sponsors__title {
         margin-block-start: 0;
-        font-size: var(--wp--preset--font-size--large);
+        margin-block-end: 0;
+        font-size: 1.4rem;
         a {
           color: var(--wp--preset--color--custom-main);
         }
