@@ -40,8 +40,14 @@
       .wordcamp-schedule__session {
         background: #FFF;
         &.is-spanning-some-tracks {
+          background: #F0F4F5;
           .wordcamp-schedule__session-title {
-            text-align: center;
+            justify-content: center;
+          }
+        }
+        .wordcamp-schedule__session-title {
+          a {
+            color: var(--wp--preset--color--custom-main);
           }
         }
       }
