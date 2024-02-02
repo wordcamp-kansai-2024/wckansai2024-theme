@@ -754,6 +754,43 @@ ul.wordcamp-organizers.has-grid-columns-2 li.wordcamp-post-list__post .wordcamp-
   font-weight: bold;
 }
 
+@media screen and (max-width: 599.9375px) {
+  .wp-block-wordcamp-schedule .wordcamp-schedule .wordcamp-schedule__day {
+    background: unset;
+  }
+  .wp-block-wordcamp-schedule .wordcamp-schedule .wordcamp-schedule__day .wordcamp-schedule__session .wordcamp-schedule__session-title {
+    font-size: 16px;
+  }
+  .wp-block-wordcamp-schedule .wordcamp-schedule .wordcamp-schedule__day .wordcamp-schedule__session .wordcamp-schedule__session-tracks dd {
+    padding: 4px 8px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .wp-block-wordcamp-schedule .wordcamp-schedule .wordcamp-schedule__day .wordcamp-schedule__session.has-track-502 .wordcamp-schedule__session-tracks dd:first-child {
+    background-color: #FFD200;
+  }
+  .wp-block-wordcamp-schedule .wordcamp-schedule .wordcamp-schedule__day .wordcamp-schedule__session.has-track-502.has-track-507 .wordcamp-schedule__session-tracks dd:nth-child(2) {
+    background-color: #51C9AB;
+    color: #FFF;
+  }
+  .wp-block-wordcamp-schedule .wordcamp-schedule .wordcamp-schedule__day .wordcamp-schedule__session.has-track-502.has-track-507.has-track-508 .wordcamp-schedule__session-tracks dd:nth-child(3) {
+    background-color: #A993E1;
+    color: #FFF;
+  }
+  .wp-block-wordcamp-schedule .wordcamp-schedule .wordcamp-schedule__day .wordcamp-schedule__session.has-track-502.has-track-508 .wordcamp-schedule__session-tracks dd:nth-child(2) {
+    background-color: #A993E1;
+    color: #FFF;
+  }
+  .wp-block-wordcamp-schedule .wordcamp-schedule .wordcamp-schedule__day .wordcamp-schedule__session.has-track-507 .wordcamp-schedule__session-tracks dd:first-child {
+    background-color: #51C9AB;
+    color: #FFF;
+  }
+  .wp-block-wordcamp-schedule .wordcamp-schedule .wordcamp-schedule__day .wordcamp-schedule__session.has-track-508 .wordcamp-schedule__session-tracks dd:first-child {
+    background-color: #A993E1;
+    color: #FFF;
+  }
+}
 .wordcamp-sponsors {
   padding-inline-start: 0;
 }

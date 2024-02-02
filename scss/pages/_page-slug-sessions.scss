@@ -69,3 +69,85 @@
     }
   }
 }
+
+@media screen and (max-width: 599.9375px) {
+  .wp-block-wordcamp-schedule {
+    .wordcamp-schedule {
+      .wordcamp-schedule__day {
+        background: unset;
+        .wordcamp-schedule__session {
+          .wordcamp-schedule__session-title {
+            font-size: 16px;
+          }
+          .wordcamp-schedule__session-tracks {
+            dd {
+              padding: 4px 8px;
+              border-radius: 5px;
+              font-size: 16px;
+              font-weight: bold;
+            }
+          }
+          &.has-track-502 {
+            .wordcamp-schedule__session-tracks {
+              dd {
+                &:first-child {
+                  background-color: #FFD200;
+                }
+              }
+            }
+            &.has-track-507 {
+              .wordcamp-schedule__session-tracks {
+                dd {
+                  &:nth-child(2) {
+                    background-color: #51C9AB;
+                    color: #FFF;
+                  }
+                }
+              }
+              &.has-track-508 {
+                .wordcamp-schedule__session-tracks {
+                  dd {
+                    &:nth-child(3) {
+                      background-color: #A993E1;
+                      color: #FFF;
+                    }
+                  }
+                }
+              }
+            }
+            &.has-track-508 {
+              .wordcamp-schedule__session-tracks {
+                dd {
+                  &:nth-child(2) {
+                    background-color: #A993E1;
+                    color: #FFF;
+                  }
+                }
+              }
+            }
+          }
+          &.has-track-507 {
+            .wordcamp-schedule__session-tracks {
+              dd {
+                &:first-child {
+                  background-color: #51C9AB;
+                  color: #FFF;
+                }
+              }
+            }
+          }
+          &.has-track-508 {
+            .wordcamp-schedule__session-tracks {
+              dd {
+                &:first-child {
+                  background-color: #A993E1;
+                  color: #FFF;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
