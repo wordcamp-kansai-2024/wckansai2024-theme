@@ -17,3 +17,24 @@
     }
   }
 }
+
+.wp-block-wordcamp-schedule {
+  .wordcamp-schedule {
+    .wordcamp-schedule__day {
+      .wordcamp-schedule__column-header {
+        &:first-child {
+          background: #D0F0FF;
+        }
+        &:nth-child(2) {
+          background: #E8F6C6;
+        }
+        &:nth-child(3) {
+          background: #C5F5E9;
+        }
+        &:nth-child(4) {
+          background: #E8E2F8;
+        }
+      }
+    }
+  }
+}
