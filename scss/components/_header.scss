@@ -32,3 +32,17 @@ header.wp-block-template-part {
     box-sizing: border-box;
   }
 }
+
+body.admin-bar {
+  .wp-block-template-part {
+    top: 32px;
+  }
+}
+
+@media screen and (max-width: 599.9375px) {
+  body.admin-bar {
+    header.wp-block-template-part {
+      top: 46px;
+    }
+  }
+}
