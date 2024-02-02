@@ -708,6 +708,12 @@ ul.wordcamp-organizers.has-grid-columns-2 li.wordcamp-post-list__post .wordcamp-
   display: none;
 }
 
+.wp-block-wordcamp-schedule .wordcamp-schedule .wordcamp-schedule__day {
+  background: #F0F4F5;
+}
+.wp-block-wordcamp-schedule .wordcamp-schedule .wordcamp-schedule__day .wordcamp-schedule__column-header {
+  padding: 16px 0;
+}
 .wp-block-wordcamp-schedule .wordcamp-schedule .wordcamp-schedule__day .wordcamp-schedule__column-header:first-child {
   background: #D0F0FF;
 }
@@ -719,6 +725,9 @@ ul.wordcamp-organizers.has-grid-columns-2 li.wordcamp-post-list__post .wordcamp-
 }
 .wp-block-wordcamp-schedule .wordcamp-schedule .wordcamp-schedule__day .wordcamp-schedule__column-header:nth-child(4) {
   background: #E8E2F8;
+}
+.wp-block-wordcamp-schedule .wordcamp-schedule .wordcamp-schedule__day .wordcamp-schedule__session {
+  background: #FFF;
 }
 
 .wordcamp-sponsors {
