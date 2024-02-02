@@ -729,6 +729,9 @@ ul.wordcamp-organizers.has-grid-columns-2 li.wordcamp-post-list__post .wordcamp-
 .wp-block-wordcamp-schedule .wordcamp-schedule .wordcamp-schedule__day .wordcamp-schedule__session {
   background: #FFF;
 }
+.wp-block-wordcamp-schedule .wordcamp-schedule .wordcamp-schedule__day .wordcamp-schedule__time-slot-header.has-sessions {
+  background: #D0F0FF;
+}
 
 .wordcamp-sponsors {
   padding-inline-start: 0;
