@@ -1,0 +1,19 @@
+@use "../foundation/import" as i;
+@use "../foundation/variable" as v;
+@use "../functions/return_vw" as *;
+@use "sass:math";
+
+.wordcamp-sponsors {
+  padding-inline-start: 0;
+  li {
+    .wordcamp-sponsor {
+      .wordcamp-sponsors__title {
+        margin-block-start: 0;
+        font-size: var(--wp--preset--font-size--large);
+        a {
+          color: var(--wp--preset--color--custom-main);
+        }
+      }
+    }
+  }
+}

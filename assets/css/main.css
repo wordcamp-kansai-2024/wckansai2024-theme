@@ -698,3 +698,14 @@ ul.wordcamp-organizers.has-grid-columns-2 li.wordcamp-post-list__post .wordcamp-
 .page-slug-sessions .wordcamp-sessions .wordcamp-sessions__details .wordcamp-sessions__time-location {
   display: none;
 }
+
+.wordcamp-sponsors {
+  padding-inline-start: 0;
+}
+.wordcamp-sponsors li .wordcamp-sponsor .wordcamp-sponsors__title {
+  margin-block-start: 0;
+  font-size: var(--wp--preset--font-size--large);
+}
+.wordcamp-sponsors li .wordcamp-sponsor .wordcamp-sponsors__title a {
+  color: var(--wp--preset--color--custom-main);
+}
