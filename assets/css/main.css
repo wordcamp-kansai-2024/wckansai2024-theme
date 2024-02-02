@@ -770,7 +770,7 @@ ul.wordcamp-organizers.has-grid-columns-2 li.wordcamp-post-list__post .wordcamp-
   .wp-block-wordcamp-schedule .wordcamp-schedule .wordcamp-schedule__day .wordcamp-schedule__session .wordcamp-schedule__session-tracks dd::after {
     content: none;
   }
-  .wp-block-wordcamp-schedule .wordcamp-schedule .wordcamp-schedule__day .wordcamp-schedule__session.has-track-502 .wordcamp-schedule__session-tracks dd:first-child {
+  .wp-block-wordcamp-schedule .wordcamp-schedule .wordcamp-schedule__day .wordcamp-schedule__session.has-track-502 .wordcamp-schedule__session-tracks dd:nth-of-type(1) {
     background-color: #FFD200;
   }
   .wp-block-wordcamp-schedule .wordcamp-schedule .wordcamp-schedule__day .wordcamp-schedule__session.has-track-502.has-track-507 .wordcamp-schedule__session-tracks dd:nth-of-type(2) {
@@ -781,15 +781,15 @@ ul.wordcamp-organizers.has-grid-columns-2 li.wordcamp-post-list__post .wordcamp-
     background-color: #A993E1;
     color: #FFF;
   }
-  .wp-block-wordcamp-schedule .wordcamp-schedule .wordcamp-schedule__day .wordcamp-schedule__session.has-track-502.has-track-508 .wordcamp-schedule__session-tracks dd:nth-of-type(2) {
+  .wp-block-wordcamp-schedule .wordcamp-schedule .wordcamp-schedule__day .wordcamp-schedule__session.has-track-502.has-track-508:not(.has-track-507) .wordcamp-schedule__session-tracks dd:nth-of-type(2) {
     background-color: #A993E1;
     color: #FFF;
   }
-  .wp-block-wordcamp-schedule .wordcamp-schedule .wordcamp-schedule__day .wordcamp-schedule__session.has-track-507 .wordcamp-schedule__session-tracks dd:first-child {
+  .wp-block-wordcamp-schedule .wordcamp-schedule .wordcamp-schedule__day .wordcamp-schedule__session.has-track-507 .wordcamp-schedule__session-tracks dd:nth-of-type(1) {
     background-color: #51C9AB;
     color: #FFF;
   }
-  .wp-block-wordcamp-schedule .wordcamp-schedule .wordcamp-schedule__day .wordcamp-schedule__session.has-track-508 .wordcamp-schedule__session-tracks dd:first-child {
+  .wp-block-wordcamp-schedule .wordcamp-schedule .wordcamp-schedule__day .wordcamp-schedule__session.has-track-508 .wordcamp-schedule__session-tracks dd:nth-of-type(1) {
     background-color: #A993E1;
     color: #FFF;
   }
