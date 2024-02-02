@@ -18,6 +18,16 @@
   }
 }
 
+.wordcamp-block.wordcamp-post-list {
+  padding-inline-start: 0;
+  a {
+    color: var(--wp--preset--color--custom-main);
+  }
+  .sharedaddy {
+    display: none;
+  }
+}
+
 .wp-block-wordcamp-schedule {
   .wordcamp-schedule {
     .wordcamp-schedule__day {
@@ -45,7 +55,8 @@
             justify-content: center;
           }
         }
-        .wordcamp-schedule__session-title {
+        .wordcamp-schedule__session-title,
+        .wordcamp-schedule__session-speakers {
           a {
             color: var(--wp--preset--color--custom-main);
           }

@@ -708,6 +708,16 @@ ul.wordcamp-organizers.has-grid-columns-2 li.wordcamp-post-list__post .wordcamp-
   display: none;
 }
 
+.wordcamp-block.wordcamp-post-list {
+  padding-inline-start: 0;
+}
+.wordcamp-block.wordcamp-post-list a {
+  color: var(--wp--preset--color--custom-main);
+}
+.wordcamp-block.wordcamp-post-list .sharedaddy {
+  display: none;
+}
+
 .wp-block-wordcamp-schedule .wordcamp-schedule .wordcamp-schedule__day {
   background: #F0F4F5;
 }
@@ -735,7 +745,8 @@ ul.wordcamp-organizers.has-grid-columns-2 li.wordcamp-post-list__post .wordcamp-
 .wp-block-wordcamp-schedule .wordcamp-schedule .wordcamp-schedule__day .wordcamp-schedule__session.is-spanning-some-tracks .wordcamp-schedule__session-title {
   justify-content: center;
 }
-.wp-block-wordcamp-schedule .wordcamp-schedule .wordcamp-schedule__day .wordcamp-schedule__session .wordcamp-schedule__session-title a {
+.wp-block-wordcamp-schedule .wordcamp-schedule .wordcamp-schedule__day .wordcamp-schedule__session .wordcamp-schedule__session-title a,
+.wp-block-wordcamp-schedule .wordcamp-schedule .wordcamp-schedule__day .wordcamp-schedule__session .wordcamp-schedule__session-speakers a {
   color: var(--wp--preset--color--custom-main);
 }
 .wp-block-wordcamp-schedule .wordcamp-schedule .wordcamp-schedule__day .wordcamp-schedule__time-slot-header.has-sessions {
