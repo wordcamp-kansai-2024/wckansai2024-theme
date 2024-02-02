@@ -39,9 +39,15 @@
       }
       .wordcamp-schedule__session {
         background: #FFF;
+        &.is-spanning-some-tracks {
+          .wordcamp-schedule__session-title {
+            text-align: center;
+          }
+        }
       }
       .wordcamp-schedule__time-slot-header.has-sessions {
         background: #D0F0FF;
+        font-weight: bold;
       }
     }
   }
