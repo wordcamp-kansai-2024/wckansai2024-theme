@@ -107,6 +107,16 @@
                   }
                 }
               }
+            }
+            &.has-track-507 {
+              .wordcamp-schedule__session-tracks {
+                dd {
+                  &:nth-of-type(2) {
+                    background-color: #51C9AB;
+                    color: #FFF;
+                  }
+                }
+              }
               &.has-track-508 {
                 .wordcamp-schedule__session-tracks {
                   dd {
