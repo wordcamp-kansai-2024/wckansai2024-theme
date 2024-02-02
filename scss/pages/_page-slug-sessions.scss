@@ -142,21 +142,25 @@
             }
           }
           &.has-track-507 {
-            .wordcamp-schedule__session-tracks {
-              dd {
-                &:nth-of-type(1) {
-                  background-color: #51C9AB;
-                  color: #FFF;
+            &:not(.has-track-502):not(.has-track-508) {
+              .wordcamp-schedule__session-tracks {
+                dd {
+                  &:nth-of-type(1) {
+                    background-color: #51C9AB;
+                    color: #FFF;
+                  }
                 }
               }
             }
           }
           &.has-track-508 {
-            .wordcamp-schedule__session-tracks {
-              dd {
-                &:nth-of-type(1) {
-                  background-color: #A993E1;
-                  color: #FFF;
+            &:not(.has-track-502):not(.has-track-507) {
+              .wordcamp-schedule__session-tracks {
+                dd {
+                  &:nth-of-type(1) {
+                    background-color: #A993E1;
+                    color: #FFF;
+                  }
                 }
               }
             }
