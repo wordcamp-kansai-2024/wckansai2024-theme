@@ -57,7 +57,7 @@
         }
         .wordcamp-schedule__session-title,
         .wordcamp-schedule__session-speakers {
-          a {
+          a:not(.fav-session-button) {
             color: var(--wp--preset--color--custom-main);
           }
         }
