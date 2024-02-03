@@ -154,7 +154,7 @@ footer.wp-block-template-part .wp-block-page-list li a:hover {
   text-transform: uppercase;
   color: #000;
   font-size: 2.25rem;
-  line-height: 1;
+  line-height: 1.4;
   font-weight: 500;
 }
 .wp-block-heading.wck-heading-style-1::after {
@@ -723,12 +723,19 @@ ul.wordcamp-organizers.has-grid-columns-2 li.wordcamp-post-list__post .wordcamp-
 .page-slug-sessions .wp-block-wordcamp-schedule .wordcamp-schedule__date {
   display: none;
 }
+.page-slug-sessions .wordcamp-sessions .wordcamp-sessions__details {
+  padding: 0;
+  margin: 0;
+}
 .page-slug-sessions .wordcamp-sessions .wordcamp-sessions__details .wordcamp-sessions__time-location {
   display: none;
 }
 
 .wordcamp-block.wordcamp-post-list {
   padding-inline-start: 0;
+}
+.wordcamp-block.wordcamp-post-list .wordcamp-sessions__title {
+  font-size: 1.6rem;
 }
 .wordcamp-block.wordcamp-post-list a {
   color: var(--wp--preset--color--custom-main);
@@ -828,4 +835,32 @@ ul.wordcamp-organizers.has-grid-columns-2 li.wordcamp-post-list__post .wordcamp-
 }
 .wordcamp-sponsors li .wordcamp-sponsor .wordcamp-sponsors__title a {
   color: var(--wp--preset--color--custom-main);
+}
+
+#tix-attendees .tix-attendee-list.tix-columns-4 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  padding-inline-start: 0;
+}
+#tix-attendees .tix-attendee-list.tix-columns-4 li {
+  float: unset;
+  height: auto;
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 5px;
+}
+@media screen and (max-width: 998.9375px) {
+  #tix-attendees .tix-attendee-list.tix-columns-4 li {
+    width: 45%;
+    flex-basis: 45%;
+    height: auto;
+  }
+}
+#tix-attendees .tix-attendee-list.tix-columns-4 li.tix-field.tix-attendee-name {
+  margin-left: 0;
 }
