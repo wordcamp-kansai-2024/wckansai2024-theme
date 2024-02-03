@@ -23,8 +23,25 @@ ul.tix-attendee-list {
       justify-content: flex-start;
       align-items: center;
       gap: 5px;
+      height: auto;
+      margin-bottom: 0;
       @include i.mq(xs, max, true) {
         flex-basis: 45%;
+        height: auto;
+      }
+      .tix-field {
+        margin-left: 0;
+      }
+      a {
+        color: var(--wp--preset--color--custom-main);
+      }
+      .avatar {
+        width: 96px;
+        height: 96px;
+        @include i.mq(xs, max, true) {
+          width: 50px;
+          height: 50px;
+        }
       }
     }
   }
