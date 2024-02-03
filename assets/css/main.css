@@ -645,7 +645,7 @@ body.single:not(.home) {
   font-size: var(--wp--preset--font-size--small);
 }
 
-ul.tix-attendee-list.tix-columns-3 {
+#tix-attendees ul.tix-attendee-list.tix-columns-3 {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
@@ -654,11 +654,11 @@ ul.tix-attendee-list.tix-columns-3 {
   gap: 80px 0.5%;
 }
 @media screen and (max-width: 998.9375px) {
-  ul.tix-attendee-list.tix-columns-3 {
+  #tix-attendees ul.tix-attendee-list.tix-columns-3 {
     gap: 40px 10%;
   }
 }
-ul.tix-attendee-list.tix-columns-3 li {
+#tix-attendees ul.tix-attendee-list.tix-columns-3 li {
   flex-basis: 33%;
   display: flex;
   flex-flow: column;
@@ -669,23 +669,23 @@ ul.tix-attendee-list.tix-columns-3 li {
   margin-bottom: 0;
 }
 @media screen and (max-width: 998.9375px) {
-  ul.tix-attendee-list.tix-columns-3 li {
+  #tix-attendees ul.tix-attendee-list.tix-columns-3 li {
     flex-basis: 45%;
     height: auto;
   }
 }
-ul.tix-attendee-list.tix-columns-3 li .tix-field {
+#tix-attendees ul.tix-attendee-list.tix-columns-3 li .tix-field {
   margin-left: 0;
 }
-ul.tix-attendee-list.tix-columns-3 li a {
+#tix-attendees ul.tix-attendee-list.tix-columns-3 li a {
   color: var(--wp--preset--color--custom-main);
 }
-ul.tix-attendee-list.tix-columns-3 li .avatar {
+#tix-attendees ul.tix-attendee-list.tix-columns-3 li .avatar {
   width: 96px;
   height: 96px;
 }
 @media screen and (max-width: 998.9375px) {
-  ul.tix-attendee-list.tix-columns-3 li .avatar {
+  #tix-attendees ul.tix-attendee-list.tix-columns-3 li .avatar {
     width: 50px;
     height: 50px;
   }
