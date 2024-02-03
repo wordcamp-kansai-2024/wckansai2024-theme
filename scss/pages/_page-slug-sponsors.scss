@@ -18,3 +18,33 @@
     }
   }
 }
+
+#tix-attendees {
+  .tix-attendee-list {
+    &.tix-columns-4 {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px 0;
+      margin-block-start: 0;
+      margin-block-end: 0;
+      padding-inline-start: 0;
+      li {
+        float: unset;
+        height: auto;
+        display: flex;
+        flex-flow: column;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 5px;
+        @include i.mq(xs, max, true) {
+          width: 45%;
+          flex-basis: 45%;
+          height: auto;
+        }
+        &.tix-field.tix-attendee-name {
+          margin-left: 0;
+        }
+      }
+    }
+  }
+}

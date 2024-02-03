@@ -11,6 +11,8 @@
   }
   .wordcamp-sessions {
     .wordcamp-sessions__details {
+      padding: 0;
+      margin: 0;
       .wordcamp-sessions__time-location {
         display: none;
       }
@@ -20,6 +22,9 @@
 
 .wordcamp-block.wordcamp-post-list {
   padding-inline-start: 0;
+  .wordcamp-sessions__title {
+    font-size: 1.6rem;
+  }
   a {
     color: var(--wp--preset--color--custom-main);
   }
