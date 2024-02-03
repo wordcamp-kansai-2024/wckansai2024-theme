@@ -837,8 +837,8 @@ ul.wordcamp-organizers.has-grid-columns-2 li.wordcamp-post-list__post .wordcamp-
   color: var(--wp--preset--color--custom-main);
 }
 
-.home #tix-attendees .tix-attendee-list.tix-columns-4,
-.wordcamp-sponsors #tix-attendees .tix-attendee-list.tix-columns-4 {
+body.home #tix-attendees .tix-attendee-list.tix-columns-4,
+body.page-slug-sponsors #tix-attendees .tix-attendee-list.tix-columns-4 {
   display: flex;
   flex-wrap: wrap;
   gap: 30px 0;
@@ -846,8 +846,8 @@ ul.wordcamp-organizers.has-grid-columns-2 li.wordcamp-post-list__post .wordcamp-
   margin-block-end: 0;
   padding-inline-start: 0;
 }
-.home #tix-attendees .tix-attendee-list.tix-columns-4 li,
-.wordcamp-sponsors #tix-attendees .tix-attendee-list.tix-columns-4 li {
+body.home #tix-attendees .tix-attendee-list.tix-columns-4 li,
+body.page-slug-sponsors #tix-attendees .tix-attendee-list.tix-columns-4 li {
   float: unset;
   height: auto;
   display: flex;
@@ -858,18 +858,18 @@ ul.wordcamp-organizers.has-grid-columns-2 li.wordcamp-post-list__post .wordcamp-
   margin-bottom: 0;
 }
 @media screen and (max-width: 998.9375px) {
-  .home #tix-attendees .tix-attendee-list.tix-columns-4 li,
-  .wordcamp-sponsors #tix-attendees .tix-attendee-list.tix-columns-4 li {
+  body.home #tix-attendees .tix-attendee-list.tix-columns-4 li,
+  body.page-slug-sponsors #tix-attendees .tix-attendee-list.tix-columns-4 li {
     width: 50%;
     flex-basis: 50%;
     height: auto;
   }
 }
-.home #tix-attendees .tix-attendee-list.tix-columns-4 li .tix-field,
-.wordcamp-sponsors #tix-attendees .tix-attendee-list.tix-columns-4 li .tix-field {
+body.home #tix-attendees .tix-attendee-list.tix-columns-4 li .tix-field,
+body.page-slug-sponsors #tix-attendees .tix-attendee-list.tix-columns-4 li .tix-field {
   margin-left: 0;
 }
-.home #tix-attendees .tix-attendee-list.tix-columns-4 li .tix-field.tix-attendee-name,
-.wordcamp-sponsors #tix-attendees .tix-attendee-list.tix-columns-4 li .tix-field.tix-attendee-name {
+body.home #tix-attendees .tix-attendee-list.tix-columns-4 li .tix-field.tix-attendee-name,
+body.page-slug-sponsors #tix-attendees .tix-attendee-list.tix-columns-4 li .tix-field.tix-attendee-name {
   text-align: left;
 }
