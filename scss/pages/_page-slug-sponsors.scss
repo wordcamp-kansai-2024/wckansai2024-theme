@@ -34,7 +34,7 @@ body.page-slug-sponsors {
           float: unset;
           height: auto;
           display: flex;
-          flex-flow: column;
+          flex-flow: row;
           justify-content: flex-start;
           align-items: center;
           gap: 10px;
@@ -43,6 +43,7 @@ body.page-slug-sponsors {
             width: 50%;
             flex-basis: 50%;
             height: auto;
+            gap: 5px;
           }
           .tix-field {
             margin-left: 0;

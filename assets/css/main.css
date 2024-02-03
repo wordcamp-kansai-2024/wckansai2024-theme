@@ -851,7 +851,7 @@ body.page-slug-sponsors #tix-attendees .tix-attendee-list.tix-columns-4 li {
   float: unset;
   height: auto;
   display: flex;
-  flex-flow: column;
+  flex-flow: row;
   justify-content: flex-start;
   align-items: center;
   gap: 10px;
@@ -863,6 +863,7 @@ body.page-slug-sponsors #tix-attendees .tix-attendee-list.tix-columns-4 li {
     width: 50%;
     flex-basis: 50%;
     height: auto;
+    gap: 5px;
   }
 }
 body.home #tix-attendees .tix-attendee-list.tix-columns-4 li .tix-field,
